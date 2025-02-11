@@ -1,0 +1,121 @@
+.loader {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.top h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+
+
+
+
+
+.top button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.top button:active {
+  transform: scale(0.95);
+}
+
+.top button {
+  margin: 10px;
+  padding: 13px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.top .active {
+  color: rgb(255, 19, 0);
+  background-color: rgba(255, 19, 0, 0.1);
+  border: 2px solid rgb(255, 19, 0);
+}
+
+.albumsList {
+  display: grid;
+  grid-template: repeat(1, 180px) / repeat(auto-fit, minmax(150px, 0.5fr));
+  grid-auto-flow: row;
+  grid-auto-rows: 183px;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+.album {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #d1d1d1c4;
+  margin-block: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: border-color 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.album span {
+  justify-self: baseline;
+  width: 100%;
+  text-align: center;
+  padding-block: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #eeeeee;
+  transition: 0.3s;
+}
+
+.album img {
+  width: 75px;
+  margin-bottom: 30px;
+}
+
+.album:hover {
+  border-color: #202933;
+  width: 97%;
+  height: 97%;
+  color:#ff891cd4;
+  transition-duration: 0.5s;
+}
+.album:hover span {
+  background-color: #181e26;
+  transition-duration: 0.5s;
+}
